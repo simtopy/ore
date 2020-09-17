@@ -1,6 +1,6 @@
 {
-  "name": "@simtopy/sqlore",
-  "version": "0.0.1",
+  "name": "sqlore",
+  "version": "0.0.0",
   "description": "observable relational entities SQL implementation",
   "main": "index.js",
   "scripts": {
