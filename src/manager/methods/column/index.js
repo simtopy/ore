@@ -39,8 +39,8 @@ module.exports = {
       case "bigint":
         table.bigInteger(key).nullable().defaultTo(opts.default || null)
         break
-      case "decimal":
-        table.decimal(key, type.precision, type.scale).nullable().defaultTo(opts.default || null)
+      case "real":
+        table.real(key, type.precision, type.scale).nullable().defaultTo(opts.default || null)
         break
       case "email":
         table.string(key, type.length).nullable().defaultTo(opts.default || null)

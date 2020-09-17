@@ -1,7 +1,7 @@
 module.exports = {
   type: "sphere",
   fields: {
-    radius: "decimal",
+    radius: "real",
   },
   hasOne: {
     mesh: "mesh"

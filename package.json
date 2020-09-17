@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/simtopy/sqlore#readme",
   "dependencies": {
+    "camelcase": "^6.0.0",
     "colors": "^1.4.0",
     "knex": "^0.21.5",
     "mysqldump": "^3.2.0",

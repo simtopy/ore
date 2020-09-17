@@ -4,18 +4,12 @@ module.exports = {
     schema: {
       type: "string",
       format: "uuid"
-    },
-    sql: {
-      mysql: "char(36)"
     }
   },
   Timestamp: {
     key: "timestamp",
     schema: {
       type: "integer",
-    },
-    sql: {
-      mysql: "bigint(20)"
     }
   },
   Date: {
@@ -23,9 +17,6 @@ module.exports = {
     schema: {
       type: "string",
       format: "date"
-    },
-    sql: {
-      mysql: null
     }
   },
   Time: {
@@ -42,9 +33,6 @@ module.exports = {
     schema: {
       type: "string",
       format: "datetime"
-    },
-    sql: {
-      mysql: null
     }
   },
   Enum(...values) {
@@ -60,9 +48,6 @@ module.exports = {
     key: "boolean",
     schema: {
       type: "boolean",
-    },
-    sql: {
-      mysql: null
     }
   },
   Natural: {
@@ -71,9 +56,6 @@ module.exports = {
       type: "integer",
       minimum: 0,
       maximum: Number.MAX_SAFE_INTEGER
-    },
-    sql: {
-      mysql: "int(10) unsigned"
     }
   },
   Integer: {
@@ -82,45 +64,30 @@ module.exports = {
       type: "integer",
       minimum: Number.MIN_SAFE_INTEGER,
       maximum: Number.MAX_SAFE_INTEGER
-    },
-    sql: {
-      mysql: "int(10)"
     }
   },
   BigInteger: {
     key: "bigint",
     schema: {
       type: "string"
-    },
-    sql: {
-      mysql: null
     }
   },
   Real: {
-    key: "decimal",
+    key: "real",
     schema: {
       type: "number"
-    },
-    sql: {
-      mysql: "decimal(8,2)"
     }
   },
   String: {
     key: "string",
     schema: {
       type: "string"
-    },
-    sql: {
-      mysql: "varchar(255)"
     }
   },
   Text: {
     key: "text",
     schema: {
       type: "string"
-    },
-    sql: {
-      mysql: "mediumtext"
     }
   },
   Email: {
@@ -128,9 +95,6 @@ module.exports = {
     schema: {
       type: "string",
       format: "email"
-    },
-    sql: {
-      mysql: "varchar(254)"
     },
     // options
     length: 254

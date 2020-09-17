@@ -2,7 +2,7 @@ module.exports = {
   type: "comment",
   fields: {
     body: "string",
-    rating: "decimal"
+    rating: "real"
   },
   refOne: {
     author: "user",

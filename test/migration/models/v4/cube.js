@@ -1,7 +1,7 @@
 module.exports = {
   type: "cube",
   fields: {
-    length: "decimal",
+    length: "real",
   },
   hasOne: {
     mesh: "mesh"

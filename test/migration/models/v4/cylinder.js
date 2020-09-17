@@ -1,8 +1,8 @@
 module.exports = {
   type: "cylinder",
   fields: {
-    length: "decimal",
-    radius: "decimal",
+    length: "real",
+    radius: "real",
   },
   hasOne: {
     mesh: "mesh"
